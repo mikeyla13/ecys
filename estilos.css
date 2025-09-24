@@ -1,0 +1,395 @@
+/* General Styles */
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    padding-bottom: 80px; /* Add padding to prevent footer overlap */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ribeye', cursive;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F9A825;
+    padding: 10px 30px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    font-weight: bold;
+}
+
+.search-btn {
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.h1-icon {
+    height: 90px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.hero-column-img {
+    flex: 1;
+    max-width: 500px;
+}
+
+.rounded-img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.hero-column-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: center;
+}
+
+.hero-column-text h2 {
+    color: #1565C0;
+    font-size: 2.5em;
+}
+
+.hero-column-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* Featured Paintings Section */
+.featured-paintings {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.intro-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: stretch; /* Ensures columns have same height */
+}
+
+.gallery-item {
+    flex: 1;
+    max-width: 350px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures images cover the area without distortion */
+}
+
+/* Navigation Blocks Section */
+.nav-blocks {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+}
+
+.nav-block {
+    flex: 1;
+    max-width: 350px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.nav-block:hover {
+    transform: scale(1.05);
+}
+
+.nav-block-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+/* Gallery Page */
+.gallery-title {
+    color: #000000;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Artistas Page */
+.main-artistas {
+    text-align: center;
+    padding: 20px;
+}
+
+.subtitle {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.artist-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.artist-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.artist-btn {
+    display: block;
+    width: 250px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.artist-btn:hover {
+    transform: scale(1.05);
+}
+
+.btn-kandinsky {
+    background-color: #2F7F33;
+}
+
+.btn-marc {
+    background-color: #1565C0;
+}
+
+.btn-kirchner {
+    background-color: #C62828;
+}
+
+/* History Page */
+.history-page {
+    position: relative;
+    z-index: 1;
+}
+
+.history-page::before {
+    content: '';
+    position: fixed; /* Changed to fixed to cover the whole viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/imagen\ el\ grito.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.main-history {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.201); /* Added a light overlay for better readability */
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.main-history h1 {
+    margin-bottom: 20px;
+}
+
+.subtitle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.subtitle-icon {
+    height: 40px;
+}
+
+.history-subtitle {
+    color: #D84315;
+    margin: 0;
+}
+
+.history-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.history-text p {
+    font-size: 1.5em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Philosophy Page */
+.philosophy-page {
+    position: relative;
+    z-index: 1;
+}
+
+.philosophy-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/imagen\ La\ Danza\ alrededor\ del\ Becerro\ de\ Oro.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.main-philosophy {
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 0.347);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.philosophy-header {
+    margin-bottom: 40px;
+}
+
+.philosophy-title {
+    color: #D32F2F;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    gap: 65px;
+}
+
+.philosophy-icon {
+    height: 130px;
+}
+
+.philosophy-text {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.philosophy-text p {
+    font-size: 1.5em;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+/* Footer */
+.site-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-icons a {
+    margin: 0 10px;
+}
+
+.footer-icons img {
+    height: 30px;
+}
+
+.footer-text {
+    font-size: 0.8em;
+    color: #555;
+    text-align: right;
+}
+
+.footer-text p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+.gallery-item h4 {
+    margin-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
